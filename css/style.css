@@ -1,0 +1,346 @@
+body {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 1.3;
+
+    margin: 0 auto;
+}
+.clearfix {
+    display: table;
+    clear: both;
+
+    content: "";
+}
+.positioner {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.none {
+    display: none;
+}
+
+.page-header {
+    background-color: #f1f5f7;
+}
+.page-header__top {
+    margin-bottom: 45px;
+
+    color: #fff;
+    background-color: #293449;
+}
+.page-header__logo {
+    position: relative;
+
+    float: left;
+}
+
+.page-header__logo::after {
+    position: absolute;
+
+    width: 100%;
+    height: 5px;
+
+    content: "";
+
+    background-color: #b52933;
+}
+
+.page-header__logo a {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.3;
+
+    display: block;
+
+    padding: 5px 52px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: #ee3643;
+}
+
+.page-header__search form {
+    float: left;
+}
+
+.page-header__search input {
+    width: 270px;
+    padding: 9px 15px 10px 48px;
+
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+s
+.page-header__search input:hover {
+    background-color: #212a3a;
+}
+
+.page-header__search input:focus {
+    color: #000;
+    background-color: #fff;
+}
+
+.page-header__btn {
+    position: relative;
+
+    display: block;
+    float: left;
+
+    width: 100px;
+    padding: 9px 40px 10px 45px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+.page-header__btn:hover {
+    background-color: #212a3a;
+}
+
+.page-header__btn--bookmarks {
+    padding: 9px 5px 9px 45px;
+}
+.page-header__btn--cart {
+    padding: 9px 5px 10px 45px;
+}
+.page-header__btn--bookmarks::before,
+.page-header__btn--cart::before {
+    position: absolute;
+    left: 12px;
+
+    width: 20px;
+    height: 20px;
+
+    content: "";
+
+    opacity: .5;
+    background: url("../img/sprite.png") no-repeat ;
+}
+
+.page-header__btn--bookmarks::before {
+    background-position: -11px -396px;
+}
+.page-header__btn--cart::before {
+    background-position: -11px -438px;
+}
+
+.page-header__btn--bookmarks:hover::before,
+.page-header__btn--cart:hover::before {
+    opacity: 1;
+}
+
+.page-header__btn--bookmarks:active::before,
+.page-header__btn--cart:active::before {
+    opacity: .5;
+}
+
+
+.page-header__btn--purchase {
+    width: 110px;
+    padding: 9px 20px 10px 20px;
+
+    background-color: #63a63e;
+}
+.page-header__btn--purchase:hover {
+    background-color: #5fbb2d;
+}
+.page-header__btn--bookmarks:active,
+.page-header__btn--cart:active {
+    opacity: .8;
+    background-color: #161d29;
+}
+.page-header__btn--purchase:active {
+    opacity: .8;
+}
+
+
+.page-header__content {
+    margin-bottom: 21px;
+}
+.page-header__promo {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+
+    display: inline-block;
+
+    width: 210px;
+    margin-right: 20px;
+    padding-right: 40px;
+    padding-left: 50px;
+
+    color: #ef5c67;
+}
+.page-header__contacts {
+    display: inline-block;
+
+    vertical-align: top;
+}
+.page-header__contact-tel {
+    font-size: 21px;
+    line-height: 1.3;
+
+    position: relative;
+
+    display: block;
+
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 40px;
+    padding-bottom: 5px;
+    padding-left: 70px;
+
+    text-decoration: none;
+
+    color: #e9292a;
+    border: 3px solid #fff;
+}
+.page-header__contact-tel::before {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+
+    width: 20px;
+    height: 20px;
+
+    content: "";
+
+    background: url("../img/sprite.png") no-repeat -14px -560px;
+}
+
+.page-header__adress {
+    font-size: 14px;
+    line-height: 1.3;
+
+    max-width: 270px;
+    margin: 0;
+    padding: 0;
+
+    color: #32425c;
+}
+
+.page-header__user-block {
+    float: right;
+}
+
+.page-header__login,
+.page-header__registration {
+    font-size: 21px;
+    line-height: 1.3;
+
+    display: inline-block;
+
+    padding-top: 9px;
+    padding-right: 25px;
+    padding-bottom: 9px;
+    padding-left: 25px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    color: #000;
+    background-color: #fff;
+}
+
+.page-header__login:hover,
+.page-header__registration:hover {
+    color: #ee3643;
+}
+
+.page-header__login:active,
+.page-header__registration:active {
+    color: #b2b2b2;
+}
+
+.page-header__login {
+    position: relative;
+
+    padding-left: 50px;
+}
+
+.page-header__login::before {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+
+    width: 20px;
+    height: 20px;
+
+    content: "";
+    transition: .5 s;
+
+    background: url("../img/sprite.png") no-repeat -13px -361px;
+}
+
+.page-header__login:hover::before {
+    background: url("../img/sprite.png") no-repeat -13px -320px;
+}
+
+.page-header__login:active::before {
+    background: url("../img/sprite.png") no-repeat -13px -361px;
+}
+
+.header-menu {
+    padding-bottom: 56px;
+}
+
+
+.header-menu__list {
+    position: relative;
+
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    background-color: #32425c;
+
+    justify-content: space-between;
+}
+.header-menu__list::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    content: "";
+
+    background-color: #293449;
+}
+
+
+.header-menu__list-item a {
+    font-size: 17px;
+    line-height: 1.3;
+
+    position: relative;
+    z-index: 1;
+
+    display: block;
+
+    padding-top: 19px;
+    padding-right: 30px;
+    padding-bottom: 19px;
+    padding-left: 30px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+.header-menu__list-item a:hover {
+    background-color: #293449;
+}
+.header-menu__list-item a:active {
+    color: #8e939c;
+    background-color: #1d2739;
+}
