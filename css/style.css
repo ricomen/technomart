@@ -25,13 +25,15 @@ body {
   float: right;
 }
 .btn {
+  display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 18px;
 
   display: block;
 
   padding: 10px 25px;
-
+  text-align: center;
   text-transform: uppercase;
 
   color: #fff;
@@ -107,12 +109,10 @@ body {
 .search__field:hover {
   background-color: #212a3a;
 }
-
 .search__field:focus {
   color: #000;
   background-color: #fff;
 }
-
 .page-header__btn {
   position: relative;
 
@@ -507,9 +507,9 @@ body {
   color: #32425c;
 }
 
-.popular-product__link {
+.btn--popular{
   text-decoration: none;
-
+  float: right;
   background-color: #ee3643;
 }
 
