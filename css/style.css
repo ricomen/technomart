@@ -40,6 +40,7 @@ body {
   border: none;
   border-radius: 5px;
   outline: none;
+  text-decoration: none;
 }
 .btn--promo {
   margin-top: 10px;
@@ -488,22 +489,22 @@ body {
 
 .popular-product__header {
   margin-bottom: 20px;
-
-  background-color: #f7f3ec;
+  padding: 25px 30px;
+  background-color: #f7f3ec;  
+}
+.popular-product__header::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .popular-product__title {
+  float: left;
   font-size: 30px;
   font-weight: 400;
   line-height: 1.3;
-
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 30px;
-
   text-transform: uppercase;
-
   color: #32425c;
 }
 
@@ -511,26 +512,53 @@ body {
   text-decoration: none;
   float: right;
   background-color: #ee3643;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
-.product-card {
-  width: 220px;
+.product {
+  position: relative;
+  width: 220px;  
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.product__action {
+  display: none;
+  width: 100%;
+  top: 45px;
+}
+.product:hover {
+  box-shadow: 0  5px 40px #ccc;
+}
+.product:hover .product__action {
+  display: block;
+  position: absolute;
+  border: 1px solid red;
+}
 
-  background-color: red;
+.product__flag {
+  position: absolute;
+  display: none;
 }
-.product-card__img {
-  margin: 0 auto;
+.product__flag--show {
+  display: block;
 }
-.product-card__title {
+.product__img {
+  min-width: 100%;
+  height: auto;
+}
+.product__title {  
   font-size: 18px;
   line-height: 20px;
-
-  padding-right: 30px;
-  padding-left: 30px;
-
   text-align: center;
 }
-
-.product-card__price {
-  background-color: green;
+.btn--price {
+  font-family: "PT Sans" "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #ee3643;
+}
+.btn--bye,
+.btn--bookmark {
+  color: #000;
 }
