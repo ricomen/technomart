@@ -93,25 +93,22 @@ body {
   background-color: #ee3643;
 }
 
-.page-header__search form {
+.search {
   float: left;
 }
-
-.page-header__search input {
+.search__field {
   width: 270px;
   padding: 9px 15px 10px 48px;
-
   color: #fff;
   border: none;
   outline: none;
   background-color: transparent;
 }
-s
-.page-header__search input:hover {
+.search__field:hover {
   background-color: #212a3a;
 }
 
-.page-header__search input:focus {
+.search__field:focus {
   color: #000;
   background-color: #fff;
 }
